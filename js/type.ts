@@ -89,3 +89,23 @@ const asciiResults = convertToASCII(elements);
 // 4. Print/Display the results inside the HTML elements
 document.getElementById("originalOutput").textContent = elements.join(", ");
 document.getElementById("asciiOutput").textContent = asciiResults.join(", ");
+
+
+
+
+// 1. The given array with mixed positive and negative values
+        const numbers = [12, -5, 45, -20, 0, 33, -2, 8];
+
+        // 2. Function to remove negative values using .filter()
+        function removeNegatives(arr) {
+            // The filter method checks every item. 
+            // If the condition (num >= 0) is true, it keeps the item; otherwise, it drops it.
+            return arr.filter(num => num >= 0);
+        }
+
+        // 3. Call the function
+        const positiveNumbers = removeNegatives(numbers);
+
+        // 4. Print/Display the results inside the HTML elements
+        document.getElementById("originalOutput").textContent = numbers.join(", ");
+        document.getElementById("filteredOutput").textContent = positiveNumbers.join(", ");
