@@ -126,8 +126,35 @@ document.getElementById("array").innerHTML = revArray.join(", ");
 document.getElementById("revoutput").innerHTML = revOutput.join(", ");
 //11. write a JavaScript program for check value is found or not?
 const items = ["apple", "banana", "cherry", "date"];
+document.getElementById("arrayOutput").innerHTML = items.join(", ");
 const searchItem = "cherry";
 const isFound = items.includes(searchItem);
-document.getElementById("arrayOutput").innerHTML = items.join(", ");
 document.getElementById("searchOutput").innerHTML = searchItem;
 document.getElementById("resultOutput").innerHTML = isFound ? "Found" : "Not Found";
+//12. write a JavaScript program for print your name and write the no of total character.
+const myName = "Dhruvi";
+const nameArray = myName.length;
+document.getElementById("myName").innerHTML = myName;
+document.getElementById("nameArray").innerHTML = nameArray;
+//13.  write a JavaScript program given this output using replace concept.
+// Input : - "I often take a walk with my dog in the evening. His dog follows him everywhere. I don't feed my dog in the morning";
+// Output:-  "I often take a walk with my cat in the evening. His cat follows him everywhere. I don't feed my cat in the morning"
+const inputDog = "I often take a walk with my dog in the evening. His dog follows him everywhere. I don't feed my dog in the morning";
+const outputCat = inputDog.replaceAll("dog", "cat");
+document.getElementById("inputDog").innerHTML = inputDog;
+document.getElementById("outputCat").innerHTML = outputCat;
+// 14.  write a JavaScript program convert string to array.
+// Input :- "Hire the top 1% freelance developers";
+// Output :- ["Hire", "the", "top", "1%"] 
+let inputString = "Hire the top 1% freelance developers";
+let fullArray = inputString.split(" ");
+let outputArray = fullArray.slice(0, 4);
+document.getElementById("output14").innerHTML = outputArray.toString();
+document.getElementById("input14").innerHTML = inputString.toString();
+// 15. write a JavaScript program convert for array to string.
+// Input:- ['5', 32, 'Daniel'];
+// Output: 5,32,Daniel
+let inputArray = ['5', 32, 'Daniel'];
+let outputString = inputArray.join(",");
+document.getElementById("output15").innerText = outputString;
+document.getElementById("input15").innerText = inputArray;
