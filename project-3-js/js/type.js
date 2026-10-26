@@ -13,7 +13,7 @@ const res4 = myColor[0];
 // 5. Middle elements: Green,White
 const res5 = myColor.slice(1, 3).join(",");
 // 6. Add 'orange' and join: Red,Green,White,Black,orange
-const res6 = myColor.unshift("orange").join(",");
+const res6 = [myColor, "orange"].join(",");
 container.innerHTML = `
     <p>${res1}</p>
     <p>${res2}</p>
